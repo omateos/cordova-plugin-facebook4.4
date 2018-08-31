@@ -21,8 +21,6 @@ exports.showDialog = function showDialog (options, s, f) {
   options.href = options.href || ''
   options.picture = options.picture || ''
 
-  alert("OM");
-
   FB.ui(options, function (response) {
     if (response && (response.request || !response.error_code)) {
       s(response)
